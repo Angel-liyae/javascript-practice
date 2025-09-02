@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Add new property in object....
+
+        let obj = {
+            Name: "Angel",
+            Age: 20,
+        };
+        obj.city = "Newyork";
+
+        console.log(obj);
+
+        // access property in bracket notation in object....
+
+        let obj1 = {
+            Name1: "Angel",
+            Age1: 20,
+        };
+        console.log(obj1["Age1"]);
+
+        //accessing a non-existing property.....
+
+        let obj2 = {
+            Place: "Palavaram",
+            color: "Pink",
+        };
+        console.log(obj2.Age);
+
+        //access multiple properties...
+
+        let obj4 = {
+            Name: "Angel.R",
+            Age: 20,
+            Email: "angelliyae@gmail.com",
+            Favplace: "Church",
+            Favcolor: "Pink",
+            Favnum: 7,
+        };
+        console.log(obj4);
+
+        //update the property to the object....
+
+        let obj5 = {
+            Name: "Angel",
+            Qualification: "Degree Completed",
+            Age: 20,
+        };
+        console.log(obj5.Age = 35);
+        console.log(obj5);  //to check the output..
+
+        //Delete a property...
+
+        let obj6 = {
+            Name: "Angel",
+            Age: 20,
+            favfood: "Appo",
+            color: "pink",
+        };
+        delete obj6.color
+        console.log(obj6);
+
+
+    </script>
+</body>
+
+</html>

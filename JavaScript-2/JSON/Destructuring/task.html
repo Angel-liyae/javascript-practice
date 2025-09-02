@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const movie = {
+            title: "Leo",
+            year: 2023,
+            director: {
+                name: "Lokesh Kanagaraj",
+                age: 37,
+                otherMovies: ["Kaithi", "Master", "Vikram"]
+            },
+            cast: ["Vijay", "Trisha", "Sanjay Dutt"]
+
+        };
+
+        const { title, year } = movie;  //Destructure title and year
+        console.log("Movie:",title, year);
+
+        const { director: { name, otherMovies } } = movie;  //Destructure name and otherMovies from director
+        console.log("Director: " ,name, otherMovies);
+
+        const { cast: [first, , third] } = movie;  //Destructure leadActor, skip middle, get supportActor from cast
+        console.log(first, third);
+
+        // Use spread operator to create a new object newMovie and add:
+        // rating: 8.9
+        // Add an extra cast: "GVM"
+
+        const newmovie = {
+            rating: 8.9,
+            extracast: "GVM",
+        }
+
+        const merge = { ...movie, ...newmovie }
+        console.log(merge);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function recur(n) {
+            if (n === 0) {
+                console.log("Go up");
+                return;
+            }
+            console.log(n);
+            recur(n - 1);
+
+            console.log(n);
+        }
+        recur(4);
+
+
+
+    </script>
+
+</body>
+
+</html>

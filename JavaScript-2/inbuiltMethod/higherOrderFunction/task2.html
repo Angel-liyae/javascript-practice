@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let down = document.createElement("h3");
+
+        const lab = document.createElement("label");
+        lab.textContent = "Enter Value:";
+
+        const inp = document.createElement("input");
+        inp.setAttribute("class", "inpc");
+
+        const but1 = document.createElement("button");
+        but1.textContent = "Sort Ascending";
+        but1.setAttribute("onclick", "ascen()");
+
+        const but2 = document.createElement("button");
+        but2.textContent = "Sort Decending";
+        but2.setAttribute("onclick", "decen()");
+
+        function ascen() {
+
+            let result1 = document.getElementsByClassName("inpc")[0].value;
+
+            let a = result1.split(",");
+
+            let d = a.sort((a, b) => a - b);
+
+            console.log(d);
+
+            let c = d.toString();
+
+            console.log(c);
+
+            down.innerHTML = d;
+
+        }
+
+        function decen() {
+
+            let result2 = document.getElementsByClassName("inpc")[0].value;
+
+            let a = result2.split(",");
+
+            let d = a.sort((a, b) => b - a);
+
+            let c = d.toString();
+
+            down.innerHTML = d;
+
+
+        }
+
+        document.body.append(lab, inp, but1, but2, down)
+    </script>
+</body>
+
+</html>

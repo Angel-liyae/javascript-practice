@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- for practice myself selector  -->
+
+    <label for="">Name:</label>
+    <input type="text" id="nameId" class="data"> <br> <br>
+
+    <label for="">Age:</label>
+    <input type="text" id="ageId" class="data"><br> <br>
+
+    <label for="">Mail:</label>
+    <input type="text" id="mailId" class="data"><br> <br>
+
+    <button onclick="fun()">submit</button>
+
+    <h1 id="resultId" class="data1"></h1>
+
+
+    <script>
+        function fun() {
+
+            //call by using id name
+
+            // let name = document.getElementById("nameId").value;
+            // let age = document.getElementById("ageId").value;
+            // let mail = document.getElementById("mailId").value;
+
+            // let result = document.getElementById("resultId")
+
+            // result.innerHTML = `User name: ${name.value},User age: ${age.value},User mail: ${mail.value}`;
+
+
+
+            //call by using class name
+
+            // let Userdata = document.getElementsByClassName("data");
+
+            // let result=document.getElementsByClassName("data1");
+
+            // result[0].innerHTML= `User name: ${Userdata[0].value},User age: ${Userdata[1].value},User mail: ${Userdata[2].value}`;
+
+
+
+            //call by tagnames
+
+            // let Userdata = document.getElementsByTagName("input");
+            // let result = document.getElementById("resultId");
+
+            // result.innerHTML = `User name: ${Userdata[0].value},User age: ${Userdata[1].value},User mail: ${Userdata[2].value}`;
+
+
+
+            //call by queryselector
+
+            let Userdata = document.querySelector("input");
+            let result = document.getElementById("resultId");
+
+            result.innerHTML = Userdata.value
+
+
+
+            // call by queryselectorall
+
+            // let Userdata = document.querySelectorAll(".data,#resultId")
+
+            // Userdata[3].innerHTML = `User name: ${Userdata[0].value},User age: ${Userdata[1].value},User mail: ${Userdata[2].value}`;
+
+
+
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let br = document.createElement("br")
+
+        // This is for local Storage
+
+        const lab = document.createElement("label"); //label for name
+        lab.textContent = "Name: ";
+
+        const inp = document.createElement("input");
+        inp.setAttribute("id", "nameId");
+
+        //This is for Session storage
+
+        const lab1 = document.createElement("label");
+        lab1.textContent = "Login Time:";
+
+        const inp1 = document.createElement("input");
+        inp1.setAttribute("id", "loginId");
+
+        //This is for Cookies
+
+        const lab2 = document.createElement("label") //label for theme
+        lab2.textContent = "Theme: ";
+
+        const drop = document.createElement("select");
+        // drop.style.border = "3px";
+        // drop.style.borderStyle = "solid";
+        // drop.style.borderColor = "purple";
+        // drop.style.width = "60px"
+
+        const opt = document.createElement("option");  //using add method 
+        opt.text = "Dark";
+        drop.add(opt);
+
+        const opt1 = document.createElement("option"); //using appendchild method
+        opt1.text = "Light";
+        drop.appendChild(opt1);
+
+        const but = document.createElement("button");
+        but.setAttribute("onclick", "butFun()")
+        but.textContent = "Save Info";
+        but.style.margin = "10px";
+
+        function butFun() {
+            //Local storage
+            let userName = document.getElementById("nameId").value;
+            localStorage.setItem("username", userName);
+
+            //Session storage
+
+            let userlogin = document.getElementById("loginId").value;
+            sessionStorage.setItem("userLogin", userlogin);
+        }
+
+        document.body.append(lab, inp, br.cloneNode(), lab1, inp1, br.cloneNode(), lab2, drop, br.cloneNode(), but);
+
+
+    </script>
+</body>
+
+</html>

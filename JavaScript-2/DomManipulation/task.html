@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const element = document.createElement("div");
+
+        const lab = document.createElement("label")
+        lab.textContent = "Name: ";
+
+        const form = document.createElement("input");
+        form.setAttribute("type", "text")
+        form.setAttribute("id", "formc")
+
+        const but = document.createElement("button")
+        but.textContent = "Add task"
+        but.setAttribute("onclick", "printFun()")
+
+        const res = document.createElement("h1");
+        res.setAttribute("class", "resclass")
+
+
+        document.body.append(element, lab, form, but, res)
+
+        //Function 
+
+        function printFun() {
+            let box = document.getElementById("formc").value;
+            res.innerHTML = box;
+
+
+            const butt = document.createElement("button")
+            butt.textContent = "Delete";
+            butt.setAttribute("onclick", "del ()")
+
+            document.body.append(butt);
+
+        }
+        function del() {
+            res.remove("h1");
+        }
+
+
+        console.log(res);
+
+
+    </script>
+</body>
+
+</html>

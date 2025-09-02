@@ -1,0 +1,94 @@
+<!-- I print my name using loop concept -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(" ");
+
+        for (let a = 1; a <= 10; a++) {
+            let star = " ";
+            for (a1 = 1; a1 <= 10; a1++) {
+                if (a1 === 1 || a1 === 10 || a === 1 || a === 6) {
+                    star += "*" + " ";
+                } else {
+                    star += " " + " ";
+                }
+            }
+            console.log(star + a);
+
+        }
+        console.log(" ");
+
+
+        for (let n = 1; n <= 10; n++) {
+            let star1 = " ";
+            for (n1 = 1; n1 <= 10; n1++) {
+                if (n1 === 1 || n1 === 10 || n === n1) {
+                    star1 += "*" + " ";
+                } else {
+                    star1 += " " + " ";
+                }
+            }
+            console.log(star1, n);
+
+        }
+        console.log(" ");
+
+        for (let g = 1; g <= 10; g++) {
+            let star4 = " ";
+            for (g1 = 1; g1 <= 10; g1++) {
+                if (g === 1 || g === 10 || g1 === 1 || g === 5 && g1 >= 6 || g1 === 5 && g1 >= 6) {
+                    star4 += "*" + " ";
+                } else {
+                    star4 += " " + " ";
+                }
+            }
+            console.log(star4, g);
+
+        }
+
+        console.log(" ");
+
+
+
+
+        for (let e = 1; e <= 10; e++) {
+            let star2 = " ";
+            for (let e1 = 1; e1 <= 10; e1++) {
+                if (e === 1 || e === 6 || e === 10 || e1 === 1) {
+                    star2 += "*" + " ";
+                } else {
+                    star2 += " " + " ";
+                }
+            }
+            console.log(star2, e);
+
+        }
+
+        console.log(" ");
+
+        for (let l = 1; l <= 10; l++) {
+            let star3 = " ";
+            for (l1 = 1; l1 <= 10; l1++) {
+                if (l === 10 || l1 === 1) {
+                    star3 += "*" + " ";
+                } else {
+                    star3 += " " + " "
+                }
+            }
+            console.log(star3, l);
+
+        }
+
+    </script>
+</body>
+
+</html>

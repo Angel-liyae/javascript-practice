@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Log Specific message based on a browser name.
+
+        let browser = "Opera";
+        let Result;
+        switch (browser) {
+            case "Safari":
+                Result = "Allowed";
+                break;
+            case "Opera":
+                Result = "Allowed";
+                break;
+            case "InternetExplorer":
+                Result = "Allowed";
+                break;
+            case "Firefox":
+                Result = "Allowed";
+                break;
+            default:
+                Result = "Disallowed";
+        }
+        console.log(Result);
+
+        // 2. Determine a grade category based on letter grade.
+
+        let grade = "B+"
+        switch (grade) {
+            case "A+":
+                console.log("Excellent");
+                break;
+            case "A-":
+                console.log("Awersome");
+                break;
+            case "B+":
+                console.log("Good");
+                break;
+            case "B-":
+                console.log("Not bad");
+                break;
+            case "c":
+                console.log("Poor");
+                break;
+            default:
+                console.log("Not in Grade list!");
+        }
+
+        // 3. Determine the season based on the month number.
+
+        let Month = 4;
+        switch (Month) {
+            case 1:
+            case 2:
+            case 3:
+                console.log("Spring");
+                break;
+            case 4:
+            case 5:
+            case 6:
+                console.log("Summer");
+                break;
+            case 7:
+            case 8:
+            case 9:
+                console.log("Antumn");
+                break;
+            case 10:
+            case 11:
+            case 12:
+                console.log("Winter");
+                break;
+            default:
+                console.log("Invalid month number");
+        }
+
+        // 4. Log the name of the day based on a number.
+
+        let day = 2;
+        switch (day) {
+            case 1:
+                console.log("Sunday");
+                break;
+            case 2:
+                console.log("Monday");
+                break;
+            case 3:
+                console.log("Tuesday");
+                break;
+            case 4:
+                console.log("Wednesday");
+                break;
+            case 5:
+                console.log("Thrusday");
+                break;
+            case 6:
+                console.log("Friday");
+                break;
+            case 7:
+                console.log("Saturday")
+                break;
+            default:
+                console.log("Invalid day!");
+        }
+
+        // 5. Log messages based on an HTTP status code.
+
+        let code = 501;
+        switch (code) {
+            case 100:
+                console.log("Continue");
+                break;
+            case 300:
+                console.log("Multiple choice");
+                break;
+            case 400:
+                console.log("Bad Request");
+                break;
+            case 500:
+                console.log("Internal Server Error");
+                break;
+            default:
+                console.log("Invalid Server Code");
+        }
+
+        // 6. Log the color of a fruit.
+
+        let color = "Orange";
+        switch (color) {
+            case "Orange":
+                console.log("Papaya");
+                break;
+            case "Red":
+                console.log("Apple");
+                break;
+            case "Green":
+                console.log("Guava");
+                break;
+            default:
+                console.log("Invalid fruit!");
+        }
+
+        // 7. Calculate the result of a basic arithmetic operation.
+
+        let operator = "%"
+        let a = 5, b = 10;
+        switch (operator) {
+            case "+":
+                console.log(a + b);
+                break;
+            case "-":
+                console.log(a - b);
+                break;
+            case "*":
+                console.log(a * b);
+                break;
+            case "/":
+                console.log(a / b);
+                break;
+            case "%":
+                console.log(a % b);
+                break;
+            default:
+                console.log("Invalid operator");
+        }
+
+        // 8. Log different messages based on the user role.
+
+        let role = "User";
+        switch (role) {
+            case "Admin":
+                console.log("You have full access");
+                break;
+            case "User":
+                console.log("You can access, what the admin allowed");
+                break;
+            case "Editor":
+                console.log("You can edit the page");
+                break;
+            default:
+                console.log("Invalid role");
+        }
+
+        // 9. Log the action based on the color of a traffic light.
+
+        let traffic = "Red";
+        switch (traffic) {
+            case "Red":
+                console.log("STOP");
+                break;
+            case "Yellow":
+                console.log("GET READY");
+            case "Green":
+                console.log("GO!");
+                break;
+            default:
+                console.log("Invalid traffic color");
+        }
+
+        // 10. Categorize a number as small, medium, or large.
+
+        let number = 50;
+        switch (true) {
+            case number < 10:
+                console.log("It looks small");
+                break;
+            case number <= 35:
+                console.log("It looks medium");
+                break;
+            case number >= 50:
+                console.log("It looks large");
+                break;
+            default:
+                console.log("Invalid number");
+        }
+
+    </script>
+</body>
+
+</html>

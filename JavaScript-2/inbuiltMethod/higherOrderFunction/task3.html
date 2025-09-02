@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let head = document.createElement("h3");
+
+        let userName = document.createElement("label");
+        userName.textContent = "UserInput:";
+
+        let userInput = document.createElement("input");
+        userInput.setAttribute("id", "userId");
+
+        let userBut = document.createElement("button");
+        userBut.textContent = "Button"
+        userBut.setAttribute("onclick", "funName()");
+
+        function funName() {
+
+            let result = document.getElementById("userId");
+            head.innerHTML = result.value;
+
+            let a = userInput.value;
+            console.log(a);
+
+            let b = a.split("");
+            console.log(b);
+
+            b.forEach((name, index) => {
+                console.log(`${name} This is index value: ${index}`);
+
+            })
+
+        }
+
+        let resul = document.createElement("h3");
+        resul.innerHTML = b;
+
+
+        document.body.append(userName, userInput, userBut, head, resul);
+    </script>
+</body>
+
+</html>

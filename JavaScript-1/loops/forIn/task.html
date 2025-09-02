@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Use `for...in` to calculate the sum of all numeric values in an object
+
+        let obj = {
+            a: 10, b: 20, c: "Angel", d: 20
+        };
+        let sum = 0;
+        for (let answer in obj) {
+            if (typeof obj[answer] === "number") {
+                sum += obj[answer];
+            }
+        }
+        console.log(`Sum of numbers:${sum}`);
+
+        // 2. Use `for...in` to count the number of properties in an object.
+
+        let obj1 = {
+            brand: "Toyota", model: "Corolla", year: 2020
+        };
+        let sum1 = 0;
+        for (let ans in obj1) {
+            sum1++;
+        }
+        console.log(`Number of count: ${sum1}`);
+
+        // 3. To print each character of the string using for of
+
+        let string = "Angel";
+        for (let print of string) {
+            console.log(print);
+
+        }
+
+        // 4. Use `for...of` to print all elements in an array.
+
+        let array = ["Apple", "Orange", "Mango"];
+        for (let arr of array) {
+            console.log(arr);
+
+        }
+
+        // 5. Use `for...of` to calculate the sum of numbers in an array.
+
+        let arrays = [8, 5, 2, 8, 4, 4];
+        let sum2 = 0;
+        for (let num of arrays) {
+            sum2 += num;
+
+        }
+        console.log(`Sum of number is: ${sum2}`);
+
+        // 6. Use `for...in` to convert all string values in an object to uppercase.
+
+        let obj2 = {
+            Name: "Angel", Age: 20, Degree: "B.com"
+        };
+        for (let upper in obj2) {
+            if (typeof obj2[upper] === "string") {
+                obj2[upper] = obj2[upper].toUppercase();
+            }
+        }
+        console.log(obj2);
+
+        //7. 
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

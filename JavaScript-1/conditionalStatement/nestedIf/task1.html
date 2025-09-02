@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. Check if a user is logged in and determine their role (admin or user).
+
+        let loggedIn = true;
+        let role = "admin";
+        if (loggedIn) {
+            if (role === "admin") {
+                console.log("Welcome, Admin!");
+            } else {
+                console.log("Welcome, User!");
+            }
+        } else {
+            console.log("Please logIn!");
+        }
+
+        // 2. Check the number is odd or even and it's greater than 10.
+
+        let number = 25;
+        if (number % 2 === 0) {
+            if (number > 10) {
+                console.log("The number is even and greater than 10");
+            } else {
+                console.log("The number is even but not greater than 10");
+            }
+        } else {
+            if (number > 10) {
+                console.log("The number is odd and greater than 10");
+            } else {
+                console.log("The number is odd but not greater than 10");
+
+            }
+        }
+
+        // 3. Leap year or not.
+
+        let year = 2025;
+        if (year % 4 === 0) {
+            if (year % 100 === 0) {
+                if (year % 400 === 0) {
+                    console.log("It is a leap year");
+                } else {
+                    console.log("It is not a leap year");
+                }
+            } else {
+                console.log("It is not a leap year");
+            }
+        } else {
+            console.log("It is not a leap year");
+        }
+
+        // 4. if a number is divisible by 2 and also by 3.
+
+        let divi = 208;
+        if (divi % 2 === 0) {
+            if (divi % 3 === 0) {
+                console.log("The number is divisible by 2 and also by 3!");
+            } else {
+                console.log("The number is divisible by 2 but not by 3!");
+            }
+        } else {
+            console.log("The number is not divisible by 2");
+        }
+
+        // 5. Nested `if` statements to categorize a number.
+
+        let num = 29;
+        if (num > 0) {
+            if (num === 0) {
+                console.log("This number is Zero!");
+            } else {
+                console.log("This number is positive!");
+            }
+        } else {
+            console.log("This number is negative!");
+        }
+
+        // 6. Temperature cold, warn, and hot.
+
+        let temp = 90;
+        if (temp > 0) {
+            if (temp < 30) {
+                console.log("It is cold temperature!");
+            } else if (temp > 30 && temp < 70) {
+                console.log("This is a warn temperature");
+
+            } else {
+                console.log("This is a hot temperature!");
+
+            }
+        } else {
+            console.log("It is freezing!");
+
+        }
+
+        // 7. Access and parent granted.
+
+        let ageOf = 12;
+        let permission = true;
+        if (ageOf >= 18) {
+            if (permission) {
+                console.log("Access granted with parent permission");
+            } else {
+                console.log("Your not granted!");
+            }
+        } else {
+            console.log("Denied");
+        }
+
+        // 8. student's grade and whether they passed.
+
+        let grade = 85;
+        if (grade >= 50) {
+            if (grade >= 90) {
+                console.log("Wonderful!!! You're passed Distinction");
+            } else {
+                console.log("You're passed the examination!");
+            }
+        } else {
+            console.log("You are failed in examination!");
+        }
+
+        // 9. Classify a number as small/large and even/odd.
+
+        let check = 51;
+        if (check <= 50) {
+            if (check % 2 === 0) {
+                console.log("The number is even and small");
+
+            } else {
+                console.log("The number is small");
+            }
+        } else {
+            if (check % 2 === 1) {
+                console.log("The number is odd and large");
+            } else {
+                console.log("The number is large");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

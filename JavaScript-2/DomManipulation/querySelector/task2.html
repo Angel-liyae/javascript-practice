@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let word = document.createElement("p")
+        word.textContent = "Paragraph 1";
+        word.setAttribute("class", "text");
+
+        let word1 = document.createElement("p");
+        word1.textContent = "Paragraph 2";
+        word1.setAttribute("class", "text");
+
+        let but = document.createElement("button");
+        but.textContent = "Change all text";
+        but.onclick = all;
+
+        function all() {
+            let result = document.querySelectorAll(".text")
+            result[0].textContent = "Update";
+            result[1].textContent = "Update";
+
+        }
+
+        document.body.append(word, word1, but)
+
+    </script>
+
+    
+</body>
+
+</html>

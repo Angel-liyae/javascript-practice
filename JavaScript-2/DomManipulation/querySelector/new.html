@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let a = document.createElement("p");
+        a.setAttribute("class", "same");
+        a.textContent = "First";
+
+        let b = document.createElement("p");
+        b.setAttribute("class", "same");
+        b.textContent = "second";
+
+        let c = document.createElement("p");
+        c.setAttribute("class", "same");
+        c.textContent = "Third";
+
+        let d = document.createElement("p");
+        d.setAttribute("class", "same");
+        d.textContent = "Fourth";
+
+        let e = document.createElement("p");
+        e.setAttribute("class", "same")
+        e.textContent = "Fifth";
+
+        let butto = document.createElement("button");
+        butto.innerText = "Button";
+        butto.onclick = go;
+
+        function go() {
+
+            let an = document.querySelectorAll(".same")
+            
+            for (let index = 0; index <= an.length; index++) {
+            an.textContent="update"
+            
+            }
+        }
+
+        document.body.append(a,b,c,d,e,butto)
+
+    </script>
+</body>
+
+</html>

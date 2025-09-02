@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="codewithmeC.css">
+</head>
+
+<body>
+
+    <!-- This is Code with me for class...  -->
+
+    <div class="mainbody">
+        <div class="outputwindow">
+
+            <!-- This is heading tag -->
+            <h2 class="titleclass">Organization Detail Form</h2>
+            <br>
+            <hr> <br>
+
+            <!-- This is get Name -->
+
+            <div class="main">
+                <label>Enter Name:</label>
+                <input type="text" class="classInput">
+            </div><br>
+
+            <!-- This is get address -->
+
+            <div class="main">
+                <label>Address: </label>
+                <input type="text" class="classInput">
+            </div> <br>
+
+            <!-- This is Get Country Name from drop down list -->
+
+            <div class="main">
+                <label>Country: </label>
+                <select class="classInput" onchange="popu()">
+                    <option value="select">Select country</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="us">United State</option>
+                </select>
+            </div> <br>
+
+            <!-- This is get Phone Number -->
+
+            <div class="main">
+                <label>Phone Number:</label>
+                <input type="text" placeholder="+00" class="classInput" readonly>
+                <input type="text" placeholder="Enter Phone Number" class="classInput">
+            </div><br>
+
+            <!-- This is Get checking using radio button  -->
+
+            <div class="main">
+                <label>Do you Have GST:</label>
+                <div class="chan">
+                    <label for="yess">Yes</label>
+
+                    <input type="radio" class="radioInput" name="say" onchange="gstValidate('yes')">
+
+                    <label for="noo">No</label>
+
+                    <input type="radio" class="radioInput" name="say" onchange="gstValidate('no')">
+
+                </div>
+            </div> <br>
+
+            <!-- This is gst visible and invisible -->
+
+            <div class="gstBoxclass">
+                <label>GST Number:</label>
+                <input type="text" class="classInput">
+                
+            </div><br>
+            <hr><br>
+
+            <!-- This is button area  -->
+
+            <div class="buttonclass">
+                <button class="classBut" onclick="submitfun()">Submit</button>
+                <button class="classBut" onclick="clearfun()">Clear</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- This is import javascript file -->
+
+    <script src="./codewithmeC.js"></script>
+
+</body>
+
+</html>

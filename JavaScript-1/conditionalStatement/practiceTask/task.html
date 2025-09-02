@@ -1,0 +1,221 @@
+
+        <!-- Nested If else practice -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        let a1 = 18;
+        let b1 = 20;
+        let c1 = 34;
+        let d = 33;
+
+        if (a1 < b1) {
+            if (a1 < c1) {
+                if (a1 < d) {
+                    console.log("a is small");
+                }
+                else {
+                    console.log("d is small");
+                }
+            } else {
+                if (c1 < d) {
+                    console.log("c is small");
+                }
+                else {
+                    console.log("d is small");
+                }
+            }
+        }
+        else {
+            if (b < c) {
+                if (b < d) {
+                    console.log("b is small");
+                }
+                else {
+                    console.log("d is small");
+                }
+            }
+            else {
+                if (c < d) {
+                    console.log("C is small");
+
+                } else {
+                    console.log("d is small");
+
+                }
+            }
+        }
+
+        let temp = 31;
+        if (temp < 20) {
+            console.log("cold");
+        } else if (temp >= 20 && temp <= 30) {
+            console.log("Moderate");
+
+        } else {
+            console.log("Hot");
+
+        }
+
+
+
+        let a = 30, b = 30, c = 20;
+
+        if (a === b && b === c) {
+            console.log("Equal");
+
+        } else if (a === b || b === c || a === c) {
+            console.log("Isosceles");
+
+        } else {
+            console.log("scalene");
+
+        }
+
+
+        let check = "Angel";
+        if (check.length > 8) {
+            if (check > 8) {
+                console.log("strong");
+
+            } else if (check < 5) {
+                console.log("week");
+            }
+        } else {
+            console.log("medium");
+
+        }
+
+
+        let unit = 201;
+        if (unit <= 100) {
+            console.log("rs 1/unit");
+
+        } else if (unit <= 200) {
+            console.log("2rs ");
+        } else {
+            console.log("5rs");
+
+        }
+
+
+
+
+        let age = 19;
+        if (age < 5) {
+            console.log("free");
+        } else if (age >= 5 && age <= 18) {
+            console.log("child fare");
+        } else if (age >= 19 && age <= 60) {
+            console.log("adult fare");
+
+        } else {
+            console.log("senior fare");
+        }
+
+
+
+        let tamil = 35, english = 35, maths = 35;
+        if (tamil >= 35 && english >= 35 && maths >= 35) {
+            console.log("pass");
+
+        } else {
+            console.log("fail");
+
+        }
+
+
+
+        let amt = 999;
+        if (amt >= 1000) {
+            console.log("sufficent amount");
+
+        } else {
+            console.log("insufficient");
+
+        }
+
+        let height = 1.75, weight = 70;
+        let person = weight / height * height;
+        if (person < 18.5) {
+            console.log("under weight");
+
+        } else if (person >= 18.5 || person <= 24.9) {
+            console.log("normal");
+
+        } else if (person >= 25 || person <= 29.9) {
+            console.log("overweight");
+
+        } else {
+            console.log("obese");
+
+        }
+
+
+        let speed = 50;
+        if (speed < 40) {
+            console.log("Too slow");
+
+        } else if (speed >= 40 || speed <= 60) {
+            console.log("normal");
+
+        } else {
+            console.log("over speed");
+
+        }
+
+        let age1 = 20;
+        if (age1 >= 0 && age1 < 1) {
+            console.log("infant");
+
+        } else if (age1 >= 2 && age1 <= 12) {
+            console.log("child");
+
+        } else if (age1 > 13 && age1 <= 19) {
+            console.log("teenage");
+
+        } else if (age <= 20 && age >= 59) {
+            console.log("adult");
+
+        }
+        else {
+            console.log(("senior"));
+
+        }
+
+
+        let km = 25;
+        if (km > 0 && km <= 5) {
+            console.log("5");
+
+        } else if (km >= 6 && km <= 15) {
+            console.log("10");
+
+        } else if (km >= 16 && km <= 30) {
+            console.log("15");
+
+        } else if (km == 30) {
+            console.log("30");
+
+        } else {
+            console.log("The km is not listed");
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

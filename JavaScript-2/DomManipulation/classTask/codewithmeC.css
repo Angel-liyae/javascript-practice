@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+}
+
+.mainbody {
+    width: 100%;
+}
+
+.outputwindow {
+    background-color: #f2f3cb;
+    height: 500px;
+    width: 60%;
+    margin: 0 auto;
+    color: #365279;
+    border-radius: 20px;
+}
+
+.titleclass {
+    margin: 10px 0px 0px 280px;
+}
+
+.main {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    padding-left: 30px;
+    font-size: large;
+}
+
+.classInput {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 200px;
+    color: #365279;
+}
+
+select[class="classInput"]{
+    margin-bottom: 10px;
+    height: 27px;
+    margin-left: 20px;
+    width: 208px;
+    color: #365279;
+}
+
+input[placeholder="+00"] {
+    width: 30px;
+    margin-left: 44%;
+}
+
+.buttonclass {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.chan{
+    margin-right: -70px;
+
+}
+.radioInput{
+    margin-right: 80px;
+}
+
+input[placeholder="Enter Phone Number"]{
+    width: 150px;
+}
+
+.classBut {
+    color: white;
+    height: 25px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #365279;
+}
+
+.gstBoxclass{
+    display: none;
+}

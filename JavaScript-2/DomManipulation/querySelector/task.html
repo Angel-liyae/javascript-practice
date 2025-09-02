@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = document.createElement("p");
+        a.textContent = "This is a paragraph";
+        a.setAttribute("class","text");
+
+        let b = document.createElement("p");
+        b.textContent = "This is a paragraph";
+        b.setAttribute("class","text");
+
+        let btn = document.createElement("button");
+        btn.textContent = "Change First Text";
+        btn.onclick=butt;       
+
+        document.body.append(a,b,btn);
+
+        function butt(){
+            let result = document.querySelector(".text");
+            result.textContent = "Updated text";
+        }
+
+
+    </script>
+
+</body>
+</html>

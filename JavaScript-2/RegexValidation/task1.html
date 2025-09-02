@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // const text = "This is a bad day!";
+        // const a = text.replace(/bad/i, "Good");
+        // console.log(a);
+
+        // document.body.append(a);
+
+        let head = document.createElement("h1");
+
+        let userlab = document.createElement("label");
+        userlab.textContent = "Enter what you think!";
+
+        let userInput = document.createElement("input");
+        userInput.setAttribute("id", "userId");
+
+        let userBut = document.createElement("button");
+        userBut.textContent = "Click me!";
+        userBut.setAttribute("onclick", "userclick()");
+
+        function userclick() {
+
+            let a = document.getElementById("userId").value;
+
+            const newText = a.replace(/bad/g, "Good");
+            console.log(newText);
+
+            head.innerHTML = newText.value;
+
+            document.body.append(head);
+        }
+
+        document.body.append(userlab, userInput, userBut);
+
+
+
+    </script>
+</body>
+
+</html>

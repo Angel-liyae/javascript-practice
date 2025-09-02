@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //task 1
+        
+        const button = document.createElement("button")
+        button.textContent = "Increase Font Size";
+        button.setAttribute("onclick", "font()");
+
+        const para = document.createElement("p");
+        para.textContent = "This is a paragraph";
+        para.setAttribute("id", "textpara");
+
+        let fontSize = 16;
+ 
+        function font() {
+            fontSize += 2;
+            const size = document.getElementById("textpara");
+            size.style.fontSize = fontSize + "px";
+
+        }
+
+        document.body.append(button, para)
+
+
+
+    </script>
+</body>
+
+</html>

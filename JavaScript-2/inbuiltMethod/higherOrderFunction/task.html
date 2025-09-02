@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let lab = document.createElement("label");
+        lab.textContent = "Enter Number: ";
+
+        let num = document.createElement("input");
+        num.setAttribute("id", "inpId");
+
+        let onebut = document.createElement("button");
+        onebut.textContent = "BUTTON";
+        onebut.setAttribute("onclick", "fun()");
+
+
+        function fun() {
+            let ul = document.createElement("ul");
+            let result = document.getElementById("inpId").value;
+            console.log(result);
+
+            let a = result.split(",")
+            console.log(a);
+
+
+            let res = a.map(num => {
+                let c = num * num
+                let li = document.createElement("li");
+                li.innerHTML = c
+                document.body.append(ul,li);
+            }); 
+            console.log(res);
+        }
+        document.body.append(lab, num, onebut);
+
+    </script>
+</body>
+
+</html>

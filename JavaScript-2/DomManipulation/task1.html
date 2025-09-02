@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const button = document.createElement("button");
+        button.textContent = "Add paragraph";
+        button.setAttribute("onclick", "clickFun()");
+
+        document.body.append(button);
+
+        function clickFun() {
+
+
+            const para = document.createElement("p");
+            para.textContent = "New paragraph added";
+
+            const div = document.createElement("div");
+            div.setAttribute("id", "container");
+            div.style.borderColor = "black";
+            div.style.borderWidth = "2px";
+            div.style.borderStyle = "solid";
+            div.style.height = "200px";
+            div.style.width = "200px";
+            div.style.margin = "20px";
+
+            document.body.append(div);
+            div.append(para);
+        }
+
+
+        const res = document.createElement("h1");
+        let get = document.getElementById("container");
+        res.innerHTML = get.value;
+
+
+
+
+    </script>
+</body>
+
+</html>

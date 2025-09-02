@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const obj = {
+            name: "ANGEL",
+            age: 20,
+            course: "Front-end Developer",
+            address: {
+                city: "Chennai",
+                pincode: 600043,
+            }
+        };
+        console.log("Original Object:", obj); //Original 
+
+        const jsonString = JSON.stringify(obj); // Original converts into stringify
+        console.log("Json String:", jsonString);
+
+        //creates fakeobj for parse
+
+        const fakeObjString = '{"name": "ANGEL", "age": 20, "course": "Front-end Developer", "address": { "city": "Chennai", "pincode": 600043}}'
+
+        // const jsonParse = JSON.parse(fakeObj); //JSON converts into parse(object),
+        // console.log("Parse Object", jsonParse);
+
+        const jsonParse = JSON.parse(fakeObjString);
+        console.log("Parsed Object:", jsonParse);
+
+
+        console.log("Student Name:", obj.name);
+        console.log("City:", obj.address.city);
+
+
+    </script>
+</body>
+
+</html>

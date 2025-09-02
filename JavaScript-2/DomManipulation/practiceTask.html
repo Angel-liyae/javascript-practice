@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const b = document.createElement("br");
+
+        const but = document.createElement("button");
+        but.textContent = "Create";
+        but.setAttribute("onclick", "createFun()");
+
+        document.body.append(but);
+
+
+        function createFun() {
+
+            let divcontainer = document.createElement("div")
+            divcontainer.setAttribute("id", "divId")
+            document.body.append(divcontainer)
+
+            const labelName = document.createElement("label");
+            labelName.textContent = "Name: ";
+
+            const name = document.createElement("input");
+            name.setAttribute("type", "text");
+            name.setAttribute("class", "cal")
+
+            const labelAge = document.createElement("label");
+            labelAge.textContent = "Age: ";
+
+            const age = document.createElement("input");
+            age.setAttribute("type", "number");
+            age.setAttribute("class", "cal")
+
+
+            const labelMail = document.createElement("label");
+            labelMail.textContent = "Mail: ";
+
+            const mail = document.createElement("input");
+            mail.setAttribute("type", "text");
+            mail.setAttribute("class", "cal");
+
+
+            const labelcell = document.createElement("label");
+            labelcell.textContent = "Cell :";
+
+            const cell = document.createElement("input");
+            cell.setAttribute("type", "number");
+            cell.setAttribute("class", "cal");
+
+
+            divcontainer.append(b, labelName, name, labelAge, age, labelMail, mail, labelcell, cell)
+        }
+
+        const print = document.createElement("button")
+        print.textContent = "Print";
+        print.setAttribute("onclick", "printFun()")
+
+        document.body.append(print)
+
+
+
+        function printFun() {
+
+            const result = document.createElement("h1");
+            result.setAttribute("id", "resultt")
+            const get = document.getElementsByClassName("cal")
+
+            result.innerHTML = `Name: ${get[0].value}  Age: ${get[1].value} Email: ${get[2].value} Cell: ${get[3].value};`
+
+            document.body.append(result);
+
+        }
+
+        const del = document.createElement("button")
+        del.textContent = "Delete";
+        del.setAttribute("onclick", "delFun()")
+
+        document.body.append(del);
+
+        function delFun() {
+
+            let division = document.getElementById("divId")
+
+            division.remove()
+            let res = document.getElementById("resultt")
+            resultt.remove();
+
+
+        }
+
+    </script>
+</body>
+
+</html>

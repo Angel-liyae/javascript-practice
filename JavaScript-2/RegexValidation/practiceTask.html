@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+
+        let name = document.createElement("label")
+        name.textContent = "Name:";
+
+        let labelName = document.createElement("input")
+        labelName.setAttribute("id", "nameId");
+
+
+        let email = document.createElement("label");
+        email.textContent = "Email:";
+
+        let emailName = document.createElement("input");
+        emailName.setAttribute("id", "emailId");
+
+
+        let pan = document.createElement("label");
+        pan.textContent = "PAN:";
+
+        let panName = document.createElement("input");
+        panName.setAttribute("id", "panId");
+
+
+        let Aadhar = document.createElement("label");
+        Aadhar.textContent = "Aadhar Number:";
+
+        let AadharName = document.createElement("input");
+        AadharName.setAttribute("id", "aadharId");
+
+
+        let but = document.createElement("button")
+        but.textContent = "Button";
+        but.setAttribute("onclick", "fun()")
+
+        document.body.append(name, labelName, email, emailName, pan, panName,Aadhar,AadharName, but);
+
+        function fun() {
+
+
+            let userName = document.getElementById("nameId");
+            let pattern = /[A-Z]/;
+
+            let checkName = pattern.test(userName.value);
+
+            if (!checkName) {
+                userName.style.borderColor = "red";
+                alert("Please Enter the your name in capital letters");
+            }
+
+            let userMail = document.getElementById("emailId");
+
+            let pattern1 = /^[\w]+@[\w]+\.[\w]{1,}$/i;
+
+            let checkMail = pattern1.test(userMail.value);
+
+            if (!checkMail) {
+                userMail.style.borderColor = "red";
+                alert("Please enter valid eamil Id");
+            }
+
+            let userPan = document.getElementById("panId");
+
+            let pat2 = /^[a-z]{5}[\d]{4}[A-Z]$/i;
+
+            let checkPan = pat2.test(userPan.value);
+
+            if (!checkPan) {
+                userPan.style.borderColor = "red";
+                alert("Please enter the correct Pan Number");
+            }
+
+            let useraadhar = document.getElementById("aadharId");
+
+            let pat3 = /^\d{4} \d{4} \d{4}$/; 
+
+
+            let checkaadhar = pat3.test(useraadhar.value);
+
+            if (checkaadhar) {
+                useraadhar.style.borderColor = "red";
+                alert("Please check the Aadhar card number!");
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>

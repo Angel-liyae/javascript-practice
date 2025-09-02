@@ -1,0 +1,418 @@
+<!-- Loop Practice..  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // print 5 star
+
+        for (let row = 1; row <= 5; row++) {
+            let star = "";
+            for (let col = 1; col <= 5; col++) {
+                star += "*";
+            }
+            console.log(star, row);
+
+        }
+        console.log(" ");
+
+
+        // print 1,12,123,1234,12345 
+
+        for (let row1 = 1; row1 <= 5; row1++) {
+            let num = "";
+            for (let col1 = 1; col1 <= row1; col1++) {
+                num += col1;
+            }
+            console.log(num);
+        }
+
+        console.log(" ");
+
+
+        //print 12345
+
+        for (let row2 = 1; row2 <= 5; row2++) {
+            let print = " ";
+            for (col2 = 1; col2 <= 5; col2++) {
+                print += col2
+            }
+            console.log(print, row2);
+        }
+
+        console.log(" ");
+
+        //print 54321
+
+        for (let rows = 5; rows >= 1; rows--) {
+            let ra = " ";
+            for (let cols = 5; cols >= 1; cols--) {
+                ra += cols;
+            }
+            console.log(ra, rows);
+        }
+
+        console.log("\n");
+
+
+        //print *
+
+        for (let row3 = 1; row3 <= 5; row3++) {
+            let numb = " ";
+            for (let col3 = 1; col3 <= row3; col3++) {
+                numb += "*";
+            }
+            console.log(numb);
+
+        }
+        console.log(" ");
+
+        //print * opposite
+
+        for (let row5 = 1; row5 <= 5; row5++) {
+
+            let star = " ";
+
+            for (let col5 = 5; col5 >= row5; col5--) {
+                star += "*";
+            }
+            console.log(star);
+        }
+        console.log(" ");
+
+
+        // print * opposite side
+
+        for (let row6 = 1; row6 <= 5; row6++) {
+
+            let oppo = " ";
+            for (let space = 5; space > row6; space--) {
+                oppo += " ";
+            }
+
+            for (let col6 = 1; col6 <= row6; col6++) {
+                oppo += "*";
+            }
+            console.log(oppo);
+
+        }
+
+        console.log(" ");
+
+        // print *oppositee
+
+        for (let row7 = 1; row7 <= 5; row7++) {
+            let a = "";
+            for (let spa = 1; spa <= row7; spa++) {
+                a += " ";
+
+            }
+            for (let col7 = 5; col7 >= row7; col7--) {
+                a += "*"
+            }
+            console.log(a);
+
+        }
+
+        console.log(" ");
+
+
+        // //print 11111
+
+        for (let row4 = 1; row4 <= 5; row4++) {
+            let number = " ";
+            for (let col4 = 1; col4 <= 5; col4++) {
+                number += row4;
+            }
+            console.log(number, row4);
+
+        } console.log(" ");
+
+        //square
+
+        for (let row = 1; row <= 5; row++) {
+
+            let empty = " ";
+
+            for (let col = 1; col <= 5; col++) {
+
+                if (row === 1 || row === 5 || col === 1 || col === 5) {
+                    empty += "*" + ' ';
+                }
+
+                else {
+                    empty += " " + " ";
+                }
+
+            }
+            console.log(empty, row);
+        }
+
+        console.log(" ");
+
+        //square in number
+
+        for (let roww = 1; roww <= 5; roww++) {
+            let z = " ";
+            for (coll = 1; coll <= 5; coll++) {
+                if (roww === 1 || roww === 5 || coll === 1 || coll === 5) {
+                    z += coll + " ";
+                } else {
+                    z += " " + " ";
+                }
+            }
+            console.log(z, roww);
+
+        }
+        console.log(" ");
+
+
+        // plus
+
+        for (let row1 = 1; row1 <= 5; row1++) {
+            let a = " ";
+            for (let col1 = 1; col1 <= 5; col1++) {
+                if (row1 === 3 || col1 === 3) {
+                    a += "*" + " ";
+                } else {
+                    a += " " + " ";
+                }
+            }
+            console.log(a, row1);
+
+        }
+
+        console.log(" ");
+
+        //plus in numbers
+
+        for (let roww1 = 1; roww1 <= 5; roww1++) {
+
+            let y = " ";
+
+            for (coll1 = 1; coll1 <= 5; coll1++) {
+
+                if (roww1 === 3 || coll1 === 3) {
+                    y += coll1 + " ";
+                } else {
+                    y += " " + " ";
+                }
+            }
+            console.log(y, roww1);
+
+        }
+
+        console.log(" ");
+
+
+        //multiple
+
+        for (let row2 = 1; row2 <= 5; row2++) {
+
+            let b = " ";
+
+            for (let col2 = 1; col2 <= 5; col2++) {
+
+
+                if (row2 === col2 || row2 + col2 === 6) {
+                    b += "*" + " ";
+                } else {
+                    b += " " + " ";
+                }
+
+            }
+            console.log(b, row2);
+
+        }
+        console.log(" ");
+
+        //multiple in numbers
+
+        for (let row8 = 1; row8 <= 5; row8++) {
+            let x = " ";
+            for (let col8 = 1; col8 <= 5; col8++) {
+                if (row8 === col8 || row8 + col8 === 6) {
+                    x += col8 + " ";
+                } else {
+                    x += " " + " ";
+                }
+            }
+            console.log(x, row8);
+
+        }
+
+        console.log(" ");
+
+
+
+        // box inside multiple
+
+        for (let row3 = 1; row3 <= 5; row3++) {
+
+            let c = " ";
+
+            for (let col3 = 1; col3 <= 5; col3++) {
+
+                if (row3 === 1 || row3 === 5 || col3 === 1 || col3 === 5 || row3 === 3 || col3 === 3) {
+                    c += "*" + " ";
+                }
+
+                else {
+                    c += " " + " ";
+                }
+            }
+            console.log(c);
+
+        }
+
+        console.log(" ");
+
+
+        //box inside plus
+
+        for (let row4 = 1; row4 <= 5; row4++) {
+
+            let d = " ";
+
+            for (let col4 = 1; col4 <= 5; col4++) {
+
+                if (row4 === 1 || row4 === 5 || col4 === 1 || col4 === 5 || row4 === col4 || row4 + col4 === 6) {
+                    d += "*" + " ";
+
+                } else {
+                    d += " " + " ";
+                }
+            }
+            console.log(d);
+
+        }
+
+        console.log(" ");
+
+
+        //use * and @ for box inside plus
+
+        for (let row9 = 1; row9 <= 5; row9++) {
+            let h = " ";
+            for (col9 = 1; col9 <= 5; col9++) {
+                if (row9 === 1 || row9 === 5 || col9 === 1 || col9 === 5) {
+                    h += "*" + " ";
+                } else if (row9 === col9 || row9 + col9 == 6) {
+                    h += "@" + " ";
+                } else {
+                    h += " " + " ";
+                }
+            }
+            console.log(h, row9);
+
+        }
+
+        console.log(" ");
+
+        //use @ and * 
+
+        for (let roww2 = 1; roww2 <= 5; roww2++) {
+            let g = " ";
+            for (let coll2 = 1; coll2 <= 5; coll2++) {
+                if (coll2 === 1 || coll2 === 5) {
+                    g += "@" + " ";
+                } else if (coll2 === 3) {
+                    g += "*" + " ";
+                } else {
+                    g += " " + " ";
+                }
+            }
+            console.log(g, roww2);
+
+        }
+        console.log(" ");
+
+
+        //use + and -
+
+        for (let plus = 1; plus <= 5; plus++) {
+            let j = " ";
+            for (let minus = 1; minus <= 5; minus++) {
+                if (minus === 1 || minus === 3 || minus === 5) {
+                    j += "+" + " ";
+                } else {
+                    j += "-" + " ";
+                }
+            }
+            console.log(j, plus);
+
+        }
+        console.log(" ");
+
+
+        //triangle
+
+        for (let tri = 1; tri <= 5; tri++) {
+            let u = " ";
+            for (let tria = 1; tria <= 5; tria++) {
+                if (tri + tria === 4 || tria - tri === 2 || tri === 3) {
+                    u += "*" + " ";
+                } else {
+                    u += " " + " ";
+                }
+            }
+            console.log(u, tri);
+
+
+        }
+
+        console.log(" ");
+
+
+        // print - and *
+
+        for (let row0 = 1; row0 <= 5; row0++) {
+            let x = " ";
+            for (let col0 = 1; col0 <= 5; col0++) {
+                if (row0 === 1 || row0 === 3 || row0 === 5) {
+                    x += "-" + " ";
+                } else if (row0 === 2 || row0 === 4) {
+                    x += "*" + " ";
+                }
+            }
+            console.log(x, row0);
+
+        }
+        console.log(" ");
+
+
+        // star
+
+        for (let z = 1; z <= 5; z++) {
+            let starr = " ";
+            for (let y = 1; y <= 5; y++) {
+                if (z + y === 4 || z + y === 8 || y - z === 2 || z - y === 2) {
+                    starr += "*" + " ";
+                } else {
+                    starr += " " + " ";
+                }
+            }
+            console.log(starr);
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

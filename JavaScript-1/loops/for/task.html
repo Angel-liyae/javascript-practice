@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. Reverse a string 
+
+        let str = "hello";
+        let reverse = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+            reverse += str[i];
+        }
+        console.log(`Reversed string: ${reverse}`);
+
+
+        // 2. To print the all element in an array
+
+        let arr = ["Apple", "Banana", "Cherry"];
+        for (let print = 0; print < arr.length; print++) {
+            console.log(arr[print]);
+        }
+
+        // 3. To count the number of vowels in a string.
+
+        let stri = "angel";
+        count = 0;
+        for (let i = 0; i < stri.length; i++) {
+            if ("aeiou".includes(stri[i].toLowerCase())) {
+                count++;
+            }
+        }
+        console.log(`Number of vowels:${count}`);
+
+
+        // 4. To find the factorial number of 5.              //doubttttttttttt
+
+        let num = 6;
+        let factorial = 1;
+        for (let a = 1; a <= num; a++) {
+            factorial *= a;
+        }
+        console.log(`Factorial of ${num}:${factorial}`);
+
+
+        //  5 .To calculate the sum of all numbers in an array.
+
+        let array = [1, 2, 3, 4, 5];
+        let store = 0;
+        for (let add = 0; add < array.length; add++) {
+            store += array[add]
+        }
+        console.log(`Sum of array elements:${store}`);
+
+
+        // 6. To find the largest number in an array.
+
+        let number = [3, 9, 6, 4, 2];
+        let larger = number[0];
+        for (let c = 1; c < number.length; c++) {
+            if (number[c] > larger) {
+                larger = number[c];
+            }
+        }
+        console.log(`Largest number: ${larger}`);
+
+
+        // 7. To print the multiplication table of 5.
+
+        let numb = 5;
+        for (let d = 1; d <= 10; d++) {
+            console.log(`${numb} x ${d} = ${numb * d}`);
+
+        }
+
+        // 8. To print all even numbers from 1 to 20.
+
+        for (let even = 1; even <= 20; even++) {
+            if (even % 2 === 0) {
+                console.log(even);
+
+            }
+        }
+
+        // 9. Print the number from 1 to 10.
+
+        for (let print = 1; print <= 10; print++) {
+            console.log(print);
+
+        }
+
+        // 10. Calculate the sum of numbers from 1 to 100.
+
+        let sum = 0;
+        for (let cal = 1; cal <= 100; cal++) {
+            sum += cal;
+        }
+        console.log(sum);
+
+
+    </script>
+</body>
+
+</html>

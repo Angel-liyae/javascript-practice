@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // print the multiplication from 1 to 10
+
+        for (let multi = 1; multi <= 10; multi++) {
+            let a = " ";
+            for (let mul = 1; mul <= 10; mul++) {
+                a += multi * mul
+            }
+            console.log(a);
+
+        }
+        console.log(" ");
+
+
+        //To print a hollow square of asterisks
+
+        for (let sq = 1; sq <= 5; sq++) {
+            let b = " ";
+            for (let square = 1; square <= 5; square++) {
+                if (sq === 1 || sq === 5 || square === 1 || square === 5) {
+                    b += "*" + " ";
+                } else {
+                    b += " " + " ";
+                }
+            }
+            console.log(b, sq);
+
+        }
+        console.log(" ");
+
+
+        //To print a rectangle of asterisks
+
+        for (let rec = 1; rec <= 3; rec++) {
+            let c = " ";
+            for (let re = 1; re <= 5; re++) {
+                if (rec === 1 || rec === 3 || re === 1 || re === 5) {
+                    c += "*" + " ";
+                } else {
+                    c += " " + " ";
+                }
+            }
+            console.log(c, rec);
+
+        }
+        console.log(" ");
+        
+
+        //To print all pairs of numbers between 1 and 5.
+
+        for (let num = 1; num <= 5; num++) {
+
+            for (let no = 1; no <= 5; no++) {
+                console.log(`${num},${no}`);
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

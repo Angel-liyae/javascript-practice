@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Basic calculation using math method 
+
+        const br = document.createElement("br");
+
+        const label1 = document.createElement("label");
+        label1.textContent = "First Number: ";
+
+        const inp1 = document.createElement("input"); // creating first input box
+        inp1.setAttribute("type", "number");
+        inp1.setAttribute("id", "firstId");
+
+        const label2 = document.createElement("label");
+        label2.textContent = "Second Number: ";
+
+        const inp2 = document.createElement("input"); // creating second input box  
+        inp2.setAttribute("id", "secondId");
+        inp2.setAttribute("type", "number");
+        inp2.style.marginTop = "5px";
+
+        const but = document.createElement("button");  //creating button
+        but.textContent = "Calculate";
+        but.setAttribute("onclick", "clickFun()");
+        but.style.margin = "10px";
+
+        const forDot = document.createElement("ul");
+
+        function clickFun() {  // this is the function
+
+            forDot.innerHTML = " ";
+
+            let inp1 = Number(document.getElementById("firstId").value);
+            let inp2 = Number(document.getElementById("secondId").value);
+
+            let result = [
+                `Minimum value: ${Math.min(inp1, inp2)}`,
+                `Maximum value: ${Math.max(inp1, inp2)}`,
+                `Square Root of First Number: ${Math.sqrt(inp1)}`,
+                `First Number to the Power of Second: ${Math.pow(inp1, inp2)}`
+            ]
+
+            result.forEach(a => {
+                const fd = document.createElement("li");
+                fd.textContent = a;
+                forDot.appendChild(fd);
+
+            });
+        }
+        document.body.append(label1, inp1, br.cloneNode(), label2, inp2, br.cloneNode(), but, forDot);
+
+    </script>
+</body>
+
+</html>

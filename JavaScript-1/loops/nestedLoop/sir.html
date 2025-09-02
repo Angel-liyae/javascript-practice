@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // for (let row = 1; row <= 1; row++) {
+
+        //     let a = " ";
+        //     for (let col = 1; col <= 5; col++) {
+        //         a += "*"
+        //     }
+        //     // a += row
+
+        //     console.log("*",a);
+
+        // }
+
+        //star
+
+        // for (let row = 1; row <= 5; row++) {
+        //     let a = " ";
+        //     for (let space = 5; space > row; space--) {
+        //         a += " ";
+        //     }
+
+        //     for (let star = 1; star <= row; star++) {
+        //         a += row+" ";
+
+        //     }
+        //     console.log(a);
+
+        // }
+
+        for(let row1=1; row1 <=9; row1++){
+            let b=" ";
+            for (let col1=1;col1<=row1; col1++){
+                if(row1+col1===6 || row1+col1===7 || row1+col1===8){
+                    b+="*"+" ";
+                }else{
+                    b+=" ";
+                }
+            }
+            console.log(b);
+            
+        }
+
+       
+    </script>
+</body>
+
+</html>

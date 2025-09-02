@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. if a year is a leap year using a ternary operator.
+
+        let year = 2024;
+        let isLeapYear = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) ? "Leap year" : "Not a leap year";
+        console.log(isLeapYear);
+
+        // 2. The value is a number,string or something else.
+
+        let value = 5;
+        let num = typeof value === "number" ? "Number" : typeof value === "string" ? "String" : "other";
+        console.log(num);
+
+        // 3. Verify if the string is empty or contain text.
+
+        let str = "Angel";
+        let empty = str === " " ? "Empty" : "Text";
+        console.log(empty);
+
+        // 4. Assign grades based on marks using the ternary operator.
+
+        let mark = 55;
+        let grade = mark >= 75 ? "B+" : mark >= 90 ? "A+" : "C"
+        console.log(`Grade: ${grade}`);
+
+        // 5. Check if a user is old enough to vote (18 or older).
+
+        let vote = 17;
+        let age = vote >= 18 ? "Eligible for voting" : "Not eligible for voting";
+        console.log(age);
+
+        // 6. identify the number is positive or negative.
+
+        let number = -89;
+        let check = number >= 0 ? "Positive" : "Negative";
+        console.log(check);
+
+        // 7. Determine the larger number between two values.
+
+        let a = 8, b = 67;
+        let large = a < b ? "True" : "False";
+        console.log(large);
+
+        // 8. To check if a number is between 1 and 100.
+
+        let numb = 50;
+        let ans = numb >= 1 && numb <= 100 ? "Yes" : "No";
+        console.log(ans);
+
+        // 9. Display a message based on whether the user is logged in or not.
+
+        let loggedIn = true;
+        let display = loggedIn == "isloggedIn" ? " The user loggedIn" : "Please log in!";
+        console.log(display);
+
+        // 10. Determine if a number is even or odd.
+
+        let numIs = 21;
+        let odev = numIs % 2 === 0 ? "Even" : "Odd";
+        console.log(odev);
+
+    </script>
+</body>
+
+</html>

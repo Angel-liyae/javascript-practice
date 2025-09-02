@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let b = document.createElement("br")
+        const text = document.createElement("input");
+        text.setAttribute("id", "userInput");
+
+        const button = document.createElement("button");
+        button.textContent = "Show Input";
+        button.setAttribute("onclick", "clickfun()");
+        button.style.margin = "20px";
+
+        const para = document.createElement("p");
+        para.setAttribute("id", "display");
+
+        function clickfun() {
+
+            // let inp = document.getElementById("userInput");
+            // let p = document.getElementById("display");
+
+            // p.innerHTML = inp.value;
+
+            document.getElementById("display").innerHTML = document.getElementById("userInput").value;
+
+        }
+        document.body.append(text, b, button, para)
+
+
+
+
+    </script>
+</body>
+
+</html>

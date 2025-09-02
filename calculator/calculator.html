@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <!-- create calculator using single function.... -->
+
+    <div class="front">
+
+        <input placeholder="Enter Number" type="number" class="box1" id="number1"> <br> <br>
+
+        <input placeholder="Enter Number" type="number" class="box1" id="number2">
+        <div>
+            <button onclick="calculation('+')">+</button>
+            <button onclick="calculation('-')">-</button>
+            <button onclick="calculation('*')">*</button>
+            <button onclick="calculation('/')">/</button>
+        </div>
+
+        <input type="number" class="box2" id="resultId" readonly>
+
+    </div>
+
+    <script>
+        let a = document.getElementById("number1");
+        let b = document.getElementById("number2");
+
+
+        let res = document.getElementById('resultId');
+
+        function calculation(operater) {
+            switch (operater) {
+                case "+": {
+
+                    res.value = parseInt(a.value) + parseInt(b.value);
+                    break;
+                }
+                case "-": {
+                    res.value = parseInt(a.value) - parseInt(b.value);
+                    break;
+
+                }
+                case "*": {
+                    res.value = parseInt(a.value) * parseInt(b.value);
+                    break;
+                }
+                case "/": {
+                    res.value = parseInt(a.value) / parseInt(b.value);
+                    break;
+                }
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

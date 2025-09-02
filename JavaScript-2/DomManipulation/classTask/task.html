@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = document.createElement("p");
+        a.textContent = "This is first paragraph";
+
+        let b = document.createElement("p");
+        b.textContent = "This is second paragraph";
+
+        let c = document.createElement("p");
+        c.textContent = "This is third paragraph";
+
+        let d = document.createElement("p");
+        d.textContent = "This is forth paragraph";
+
+        let e = document.createElement("p");
+        e.textContent = "This is fifth paragraph";
+
+        let div = document.createElement("div");
+        div.append(a, b, c, d, e);
+        div.setAttribute("class","text")
+
+        let but = document.createElement("button");
+        but.setAttribute("onclick", "change()")
+        but.textContent = "Change color";
+
+        function change() {
+            div.style.color = "red";
+        }
+
+        document.body.append(div, but)
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let product = {
+            id: "angelId",
+            name: "Angel",
+            price: "50k",
+            category: "phone",
+
+            manufacture: {
+                From: "Chennai",
+
+            },
+            warranty: {
+                Period: "1 Year",
+
+            },
+
+        };
+        
+        console.log(Object.keys(product));
+        console.log(Object.values(product));
+        console.log(Object.entries(product));
+        console.log(Object.hasOwn(product, "price"));
+        console.log(Object.hasOwn(product, "discount"));
+
+        Object.assign(product);
+        product.stock = "100";
+
+        console.log(product);
+
+        const copy = {
+            name: product.name,
+            id: product.id,
+            manufacture: product.manufacture,
+        }
+        copy.name = "Jessi";
+        copy.manufacture.From = "kerala";
+
+        console.log(copy);
+        console.log(product);  // It is changes the original value also
+
+
+    </script>
+</body>
+
+</html>

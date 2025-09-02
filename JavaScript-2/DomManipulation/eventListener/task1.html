@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: lightblue;
+        height: 500px;
+        width: 500px;
+        align-content: center;
+        font-size: 50px;
+        margin-left: 500px;
+
+    }
+</style>
+
+<body>
+    <div id="overId">
+        <p>
+            This is a Text in Paragraph in a div container.
+        </p>
+    </div>
+
+
+    <script>
+
+        const result = document.getElementById("overId");
+
+        result.addEventListener("mouseover", function fun() {
+
+            result.style.backgroundColor = "lightgreen";
+
+        });
+
+        result.addEventListener("mouseout", function func() {
+            result.style.backgroundColor = "violet";
+
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //SetTimeOut and ClearTimeOut...
+
+        const butOne = document.createElement("button");
+        butOne.textContent = "Start";
+        butOne.setAttribute("onclick", "startBut()");
+
+        const butSec = document.createElement("button");
+        butSec.textContent = "Stop";
+        butSec.setAttribute("onclick", "stopBut()")
+
+        const head = document.createElement("h2");
+
+        let timeout;
+
+        function startBut() {
+            head.innerHTML = "";
+            timeout = setTimeout(() => {
+                head.innerHTML = "Hello after delay!!";
+            }, 2000)
+        }
+
+        function stopBut() {
+            clearTimeout(timeout);
+            alert("Cancel settimeout!!")
+        }
+        document.body.append(butOne, butSec, head);
+
+
+    </script>
+</body>
+
+</html>

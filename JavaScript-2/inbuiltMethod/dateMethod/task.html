@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const forBut = document.createElement("button");
+        forBut.textContent = "Show Date Formats";
+        forBut.setAttribute("onclick", "clickFun()");
+
+        const ul = document.createElement("ul");
+
+        function clickFun() {
+
+            ul.innerHTML="";
+
+            let dateNow = new Date();
+            // console.log(dateNow.getMonth());
+        
+            let result = [
+                `Default Format: ${dateNow.toString()}`,
+                `Local Date Format: ${dateNow.toLocaleDateString()}`,
+                `ISO Format: ${dateNow.toISOString()}`
+            ]
+
+            result.forEach(a => {
+                let li = document.createElement("li");
+                li.textContent = a;
+                ul.appendChild(li);
+
+            });
+        }
+
+        document.body.append(forBut, ul)
+
+
+    </script>
+</body>
+
+</html>

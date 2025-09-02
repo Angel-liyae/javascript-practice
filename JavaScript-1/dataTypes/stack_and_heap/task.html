@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. Stack vs. Heap...
+
+        let num = "Angel";
+        console.log(num);    //stack
+
+        let obj = {
+            Name: "Angel",
+            Age: 20,
+        };
+        obj.Name = "D";
+        let obj1 = obj;
+        console.log(obj1);    //heap
+
+        // 2. Heap memory with object...
+
+        let object = {
+            Name: "Deepa",
+            Age: 20,
+            color: "Black",
+        }
+        let object1 = object;
+        object.Name = "Angel";
+        console.log(object1);
+
+        //3. memory allocation in Nested Object....
+
+        let nest = {
+            Name: "Angel",
+            Age: 20,
+            address: {
+                city: "Pallavaram",
+            }
+        };
+        let nested = nest;
+        nest.address.city = "pammal";
+        // let nested=nest;
+        console.log(nest);
+
+        // 4. Stack memory with primitive data....
+
+        let a = "angel";
+        let b = a;
+        a = "liya";
+        console.log(b);
+
+    </script>
+</body>
+
+</html>
