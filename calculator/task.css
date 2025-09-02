@@ -10,7 +10,7 @@ body {
 .front {
     border: 2px solid black;
     border-radius: 25px;
-    background-color: rgb(255, 212, 218);
+    background-color: lightpink;
     width: 20%;
     height: 270px;
     text-align: center;
